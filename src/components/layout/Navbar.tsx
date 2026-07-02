@@ -6,22 +6,27 @@ export default function Navbar() {
       <Container>
         <nav className="flex h-16 items-center justify-between">
 
-          <h1 className="text-2xl font-black text-sky-400">
+          <a
+            href="#home"
+            className="text-2xl font-black text-sky-400"
+          >
             🌐 WebVerse
-          </h1>
+          </a>
 
           <div className="hidden gap-8 text-sm text-gray-300 md:flex">
 
-            <a href="#home" className="hover:text-white">
+            <a
+              href="#home"
+              className="transition hover:text-white"
+            >
               Home
             </a>
 
-            <a href="#journey" className="hover:text-white">
+            <a
+              href="#journey"
+              className="transition hover:text-white"
+            >
               Journey
-            </a>
-
-            <a href="#journey" className="hover:text-white">
-              Technologies
             </a>
 
           </div>
