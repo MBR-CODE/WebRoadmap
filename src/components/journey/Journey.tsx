@@ -57,7 +57,7 @@ export default function Journey() {
               Selected Category:
             </p>
 
-            <pre className="rounded-lg bg-slate-900 p-4">
+            <pre className="rounded-lg bg-zinc-950 p-4">
               {selectedCategory.id}
             </pre>
 
@@ -65,7 +65,7 @@ export default function Journey() {
               Available Categories:
             </p>
 
-            <pre className="rounded-lg bg-slate-900 p-4">
+            <pre className="rounded-lg bg-zinc-950 p-4">
               {JSON.stringify(
                 Object.keys(categoryInfo),
                 null,
@@ -93,7 +93,7 @@ export default function Journey() {
 
         <div className="grid gap-8 lg:grid-cols-[260px_1fr]">
 
-          <aside className="rounded-3xl border border-slate-700 bg-slate-900 p-6">
+          <aside className="rounded-3xl border border-zinc-800 bg-zinc-950 p-6">
 
             <h3 className="mb-6 text-2xl font-bold">
               Categories
@@ -108,8 +108,8 @@ export default function Journey() {
                   onClick={() => setSelectedCategory(category)}
                   className={`w-full rounded-xl p-4 text-left transition ${
                     selectedCategory.id === category.id
-                      ? "bg-sky-500 text-white"
-                      : "bg-slate-800 hover:bg-slate-700"
+                      ? "border border-red-500 bg-red-600/15 text-red-400 shadow-lg shadow-red-500/10"
+                      : "bg-zinc-900 hover:bg-zinc-800"
                   }`}
                 >
 
@@ -148,7 +148,7 @@ export default function Journey() {
 
                 <button
                   onClick={() => setView("overview")}
-                  className="mb-6 rounded-xl border border-slate-700 bg-slate-900 px-5 py-3 transition hover:border-sky-400"
+                  className="mb-6 rounded-xl border border-zinc-800 bg-zinc-950 px-5 py-3 transition hover:border-red-500 hover:bg-red-600/10"
                 >
                   ← Back to {info.title}
                 </button>

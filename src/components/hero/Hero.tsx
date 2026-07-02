@@ -10,7 +10,7 @@ export default function Hero() {
 
         <div className="mx-auto max-w-4xl text-center">
 
-          <p className="mb-5 text-sm font-bold uppercase tracking-[0.4em] text-sky-400">
+          <p className="mb-5 text-sm font-bold uppercase tracking-[0.4em] text-red-500">
             Interactive Learning
           </p>
 
@@ -18,7 +18,7 @@ export default function Hero() {
 
             Learn
 
-            <span className="text-sky-400">
+            <span className="text-red-500">
               {" "}Web Development{" "}
             </span>
 

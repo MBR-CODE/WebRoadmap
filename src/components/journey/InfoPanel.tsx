@@ -10,7 +10,7 @@ function Badge({
   children: React.ReactNode;
 }) {
   return (
-    <span className="rounded-lg bg-slate-800 px-3 py-2">
+    <span className="rounded-lg bg-zinc-900 px-3 py-2">
       {children}
     </span>
   );
@@ -46,7 +46,7 @@ export default function InfoPanel({
   const Icon = technology.icon;
 
   return (
-    <div className="rounded-3xl border border-slate-700 bg-slate-900 p-8">
+    <div className="rounded-3xl border border-zinc-800 bg-zinc-950 p-8">
 
       <div className="mb-8 flex items-center gap-5">
 
@@ -68,11 +68,11 @@ export default function InfoPanel({
             {technology.name}
           </h2>
 
-          <p className="text-sky-400">
+          <p className="text-red-500">
             {technology.category}
           </p>
 
-          <span className="mt-2 inline-block rounded-full bg-sky-500/20 px-3 py-1 text-sm">
+          <span className="mt-2 inline-block rounded-full bg-red-600/20 px-3 py-1 text-sm">
             {technology.difficulty}
           </span>
 
@@ -85,7 +85,7 @@ export default function InfoPanel({
           Description
         </h3>
 
-        <p className="text-slate-300">
+        <p className="text-zinc-300">
           {technology.description}
         </p>
       </section>
@@ -95,7 +95,7 @@ export default function InfoPanel({
           Why Learn It?
         </h3>
 
-        <p className="text-slate-300">
+        <p className="text-zinc-300">
           {technology.why}
         </p>
       </section>
@@ -169,7 +169,7 @@ export default function InfoPanel({
               href={resource.url}
               target="_blank"
               rel="noreferrer"
-              className="block rounded-lg border border-slate-700 p-3 transition hover:border-sky-400"
+              className="block rounded-lg border border-zinc-800 p-3 transition hover:border-red-500 hover:bg-red-600/10"
             >
               {resource.title}
             </a>

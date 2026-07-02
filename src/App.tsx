@@ -4,12 +4,12 @@ import Journey from "./components/journey/Journey";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
+    <div className="min-h-screen text-white">
       <Navbar />
 
       <main>
         <Hero />
-        <Journey/>
+        <Journey />
       </main>
     </div>
   );

@@ -15,7 +15,7 @@ function Card({
   children: React.ReactNode;
 }) {
   return (
-    <section className="mb-8 rounded-2xl border border-slate-700 bg-slate-900 p-6">
+    <section className="mb-8 rounded-2xl border border-zinc-800 bg-zinc-950 p-6">
       <h3 className="mb-4 text-2xl font-bold">{title}</h3>
       {children}
     </section>
@@ -24,7 +24,7 @@ function Card({
 
 function Badge({ text }: { text: string }) {
   return (
-    <span className="rounded-lg bg-slate-800 px-3 py-2">
+    <span className="rounded-lg bg-zinc-900 px-3 py-2">
       {text}
     </span>
   );
@@ -38,20 +38,20 @@ export default function CategoryOverview({
   return (
     <div className="space-y-8">
 
-      <div className="rounded-3xl border border-sky-500/20 bg-slate-900 p-8">
+      <div className="rounded-3xl border border-sky-500/20 bg-zinc-950 p-8">
 
         <h2 className="mb-4 text-5xl font-black">
           {info.title}
         </h2>
 
-        <p className="text-lg text-slate-300">
+        <p className="text-lg text-zinc-300">
           {info.description}
         </p>
 
       </div>
 
       <Card title="🎯 Why Learn It?">
-        <p className="text-slate-300">
+        <p className="text-zinc-300">
           {info.why}
         </p>
       </Card>
@@ -98,12 +98,12 @@ export default function CategoryOverview({
 
                 ${
                   technology
-                    ? "hover:bg-slate-800"
+                    ? "hover:bg-zinc-900"
                     : "cursor-default opacity-60"
                 }`}
               >
 
-                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-sky-500 font-bold">
+                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-red-600 font-bold">
                   {index + 1}
                 </span>
 
@@ -112,7 +112,7 @@ export default function CategoryOverview({
                 </span>
 
                 {technology && (
-                  <span className="text-sky-400">
+                  <span className="text-red-500">
                     →
                   </span>
                 )}
@@ -167,7 +167,7 @@ export default function CategoryOverview({
                 onClick={() =>
                   onSelectTechnology(technology)
                 }
-                className="flex items-center gap-3 rounded-xl border border-slate-700 bg-slate-800 px-5 py-4 transition hover:border-sky-400"
+                className="flex items-center gap-3 rounded-xl border border-zinc-800 bg-zinc-900 px-5 py-4 transition hover:border-red-500 hover:bg-red-600/10"
               >
 
                 <Icon

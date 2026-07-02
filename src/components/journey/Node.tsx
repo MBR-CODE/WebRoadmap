@@ -20,17 +20,17 @@ export default function Node({
 
       ${
         active
-          ? "border-sky-400 bg-sky-500/15 shadow-lg shadow-sky-500/20"
-          : "border-slate-700 bg-slate-900 hover:-translate-y-1 hover:border-sky-400"
+          ? "border-red-500 bg-red-600/15 shadow-lg shadow-red-500/20"
+          : "border-zinc-800 bg-zinc-950 hover:-translate-y-1 hover:border-red-500 hover:bg-red-600/5 hover:bg-red-600/10"
       }`}
     >
       <div className="mb-5 flex items-center justify-between">
         <Icon
           size={42}
-          color={active ? "#38bdf8" : "#94a3b8"}
+          color={active ? "#ef4444" : "#94a3b8"}
         />
 
-        <span className="rounded-full bg-slate-800 px-3 py-1 text-xs">
+        <span className="rounded-full bg-zinc-900 px-3 py-1 text-xs">
           Explore
         </span>
       </div>
@@ -39,7 +39,7 @@ export default function Node({
         {title}
       </h3>
 
-      <p className="mt-2 text-sm text-slate-400">
+      <p className="mt-2 text-sm text-zinc-400">
         Click to view roadmap
       </p>
     </button>
